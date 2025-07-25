@@ -1,42 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202a1e;
+  color: #e0e0d6;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+}
+
+h1 {
   text-align: center;
+  background-color: #2f3e2a;
+  color: #cfd8b3;
+  padding: 16px 0;
+  margin: 0;
+  border-bottom: 2px solid #4e5f3d;
+  letter-spacing: 1px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+form {
+  background-color: #2f3e2a;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4b5d3a;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bfcbb1;
+}
+
+button {
+  background-color: #6b8c3f;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #7ca94a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #2a3a25;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-left: 6px solid #7ca94a;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+li strong {
+  display: block;
+  font-size: 1.1em;
+  color: #e0f0c4;
+  margin-bottom: 4px;
+}
+
+li em {
+  font-style: normal;
+  color: #aab799;
+  font-size: 0.9em;
+}
+
+li small {
+  display: block;
+  margin-top: 6px;
+  color: #9da891;
+  font-size: 0.85em;
+}
+
+/* Puhelin modet jne */
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    width: auto;
+    padding: 12px 30px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 900px) {
+  .container {
+    max-width: 900px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
