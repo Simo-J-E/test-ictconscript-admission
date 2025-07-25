@@ -1,0 +1,43 @@
+Open the site:
+
+Open a terminal.
+
+Go to your project folder (where your Vite + React code is).
+
+Run:
+
+1.
+npm install
+
+2.
+npm run dev
+
+Open your browser and go to the address shown (usually http://localhost:5173).
+
+Close the site:
+
+Go back to the terminal where the site is running.
+
+Press Ctrl + C to stop the server.
+
+Finnish:
+
+Avaa sivusto:
+
+Avaa terminaali.
+
+Mene projektikansioon (jossa Vite + React -koodi on).
+
+Suorita:
+1. 
+npm install
+2.
+npm run dev
+
+Avaa selain ja mene osoitteeseen, joka näkyy (yleensä http://localhost:5173).
+
+Sulje sivusto:
+
+Mene takaisin terminaaliin, jossa sivusto pyörii.
+
+Paina Ctrl + C pysäyttääksesi palvelimen.
