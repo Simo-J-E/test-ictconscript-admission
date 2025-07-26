@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Simo-J-E.github.io/test-ictconscript-admission",
+  "homepage": "https://Simo-J-E.github.io/test-ictconscript-admission/unit-logbook",
 
 "scripts": {
   "dev": "vite",
