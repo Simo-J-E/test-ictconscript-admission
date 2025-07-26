@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react'
 import EntryList from './EntryList'
 import NewEntryForm from './NewEntryForm'
-import data from './sample-data/data.json' 
 import './App.css'
 
 function App() {
   const [entries, setEntries] = useState([])
 
   useEffect(() => {
-    const sorted = data.sort((a, b) => new Date(b.isoTime) - new Date(a.isoTime))
-    setEntries(sorted)
+    fetch('./sample-data/data.json')
+      .then(res => res.json())
+      .then(data => {
+        const sorted = data.sort((a, b) => new Date(b.isoTime) - new Date(a.isoTime))
+        setEntries(sorted)
+      })
   }, [])
 
   const addEntry = (entry) => {
